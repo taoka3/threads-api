@@ -64,9 +64,9 @@ class threads
     public function getlongAccessTokenAndUserId()
     {
         try {
-            $sql = 'select user_id, long_access_token from threads where user_id = ?';
+            $sql = 'select user_id, long_access_token from threads';
             $stmt = $this->dbh->prepare($sql);
-            $stmt->execute([$this->userId]);
+            $stmt->execute();
 
             while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 $this->userId = (string)$result['user_id'];
