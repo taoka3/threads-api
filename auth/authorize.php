@@ -1,4 +1,6 @@
 <?php
 require '../lib/threads.php';
 $auth = (new threads)->authorize();
-var_dump($auth);
+if($argv[0]){
+    var_dump(urldecode($auth));
+}
