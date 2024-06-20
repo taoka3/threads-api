@@ -30,7 +30,6 @@ require '../lib/threads.php';
 <?php
 require '../lib/threads.php';
 if($argv[0]){
-    var_dump($argv);
     (new threads)->getlongAccessTokenAndUserId()->post('Threadsの作り方をQiitaに記載しています https://qiita.com/taoka-toshiaki/items/e606e2cfa31c6e2ed771')->publishPost();
 }
 ```
