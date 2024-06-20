@@ -50,7 +50,7 @@ class threads
         ];
         $params = [
             'client_id' => $this->appId,
-            'scope' => 'threads_basic',
+            'scope' => 'threads_basic,threads_content_publish',
             'redirect_uri' => $this->redirectUri,
             'response_type' => 'code',
         ];
