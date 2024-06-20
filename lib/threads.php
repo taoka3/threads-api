@@ -55,7 +55,7 @@ class threads
             'response_type' => 'code',
         ];
 
-        return $url . http_build_query($params);
+        return $url .'?'. http_build_query($params);
     }
 
     /**
