@@ -1,6 +1,8 @@
 # threads-api v1.0
 threads apiに投稿するため雛形<br>
 前提条件：threadsの設定とthreadsのアプリ設定を終えていること．<br>
+<b>※threadsというテーブルを作っています．コードを読んで推測ください😌．</b><br>
+
 詳しくはこちら<br>
 https://developers.facebook.com/docs/threads/get-started
 
